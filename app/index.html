@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Leonida Trophy Guide — GTA VI: all 55 PS5 trophies, roadmap &amp; tracker</title>
+<meta name="description" content="Offline guide and tracker for the 55 PlayStation 5 trophies of Grand Theft Auto VI: cited guides, roadmap to the platinum, missable flags, filters and spoiler mode.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand">
+    <h1>Leonida Trophy Guide</h1>
+    <p class="tagline">Grand Theft Auto VI · PlayStation 5 · all 55 trophies — roadmap, tracker &amp; cited guides. Works fully offline.</p>
+  </div>
+  <div class="progressBox" id="progressBox">
+    <div class="progressLine"><span id="progressText">0 of 55 earned</span><span id="gradeBreakdown"></span></div>
+    <div class="bar" role="progressbar" aria-label="Trophies earned"><div id="progressFill"></div></div>
+    <p class="progressHint" id="progressHint">Tick a trophy off and it stays ticked — saved in this browser.</p>
+  </div>
+</header>
+
+<nav class="tabs" aria-label="Views">
+  <button id="tabChecklist" type="button" class="tab active">Checklist</button>
+  <button id="tabRoadmap" type="button" class="tab">Roadmap to Platinum</button>
+</nav>
+
+<section class="controls" id="controls" aria-label="Tracker controls">
+  <input id="search" type="search" placeholder="Search trophies, missions, places…" aria-label="Search trophies">
+  <div class="filters" id="filters" role="group" aria-label="Filter by kind"></div>
+  <label class="spoilerToggle" title="Hide the names and descriptions of story trophies until you earn them">
+    <input id="spoilerToggle" type="checkbox" checked> Hide story spoilers
+  </label>
+  <button id="exportBtn" type="button">Export progress</button>
+  <label class="importBtn">Import progress<input id="importFile" type="file" accept="application/json,.json"></label>
+</section>
+
+<main id="main" class="main">
+  <div class="listColumn">
+    <section id="checklistView" aria-label="Trophy checklist">
+      <p id="resultCount" class="resultCount"></p>
+      <ul id="trophyList" class="trophyList"></ul>
+    </section>
+    <section id="roadmapView" aria-label="Roadmap to the platinum" hidden></section>
+  </div>
+  <aside id="detailPanel" class="detailPanel" aria-label="Trophy guide"></aside>
+</main>
+
+<footer class="footer">
+  <p><strong>About this guide.</strong> Trophy names and descriptions are shown as PlayStation publishes them. Every guide is written for this page in its own words and names its sources beside it — a guide that cites no source earns no trust. Four trophies have no confirmed unlock method yet; this guide says so plainly instead of guessing. All 55 trophies are offline; there are no online trophies. Roughly 200 hours to the Platinum, difficulty about 4/10, one playthrough.</p>
+  <p>Not affiliated with Rockstar Games. No Rockstar logo, artwork or game screenshots are used here — the look is our own.</p>
+</footer>
+
+<script type="module" src="app.js"></script>
+</body>
+</html>
